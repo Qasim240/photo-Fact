@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+:root {
+    --c-E8E8E8: #e8e8e8;
+    --c-454E5C: #454e5c;
+    --c-EAF2F5: #eaf2f5;
+    --c-f6f6f6: #f6f6f6;
+    --c-83C129: #83c129;
+    --c-797979: #797979;
+    --c-4C7CBA: #4c7cba;
+    --c-444444: #444444;
+    --c-888888: #888888;
+    --c-DFE6EE: #dfe6ee;
+    --c-D53232: #d53232;
+    --c-E9F2F5: #e9f2f5;
+    --c-96DB33: #96db33;
+    --c-3F679A: #3f679a;
+    --c-C7C7C7: #c7c7c7;
+    --f-sansLight: "OpenSansLight";
+    --f-sansRegular: "OpenSansRegular";
+    --f-sansSemiBold: "OpenSansSemibold";
+    --f-sansBold: "OpenSansBold";
+    --f-sansExtraBold: "OpenSansExtrabold";
+  }
+  
+  $screen-xl: 1290px;
+  $screen-lg: 960px;
+  $screen-md: 768px;
+  $screen-sm: 480px;
+  $screen-xs: 320px;
+  
+  $font-sansLight: "OpenSansLight";
+  $font-sansRegular: "OpenSansRegular";
+  $font-sansSemiBold: "OpenSansSemibold";
+  $font-sansBold: "OpenSansBold";
+  $font-sansExtraBold: "OpenSansExtrabold";
