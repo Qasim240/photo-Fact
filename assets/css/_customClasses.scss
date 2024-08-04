@@ -1,7 +1,23 @@
-.fs-14{
+.fs-14 {
     font-size: 14px;
 }
 
-.page-active{
+.page-active {
     color: #83C129;
+}
+
+.grey-text {
+    color: #888888;
+}
+
+.perfecr-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0);
+}
+
+.unread-msg{
+    font-size: 14px;
+    font-weight: 600;
 }

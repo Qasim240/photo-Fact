@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Home</title>
+    <style>
+        .toggle-sidebar {
+            margin-left: -100%;
+            transition: all 0.5s ease ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="text-end">
+    <button class="btn d-lg-none d-block" id="toggleBtn">toggle</button>
+        </div>
+        <div id="main_wrap">
+            <!-- sidebar -->
+            <div class="midwhi">
+                <div class="content-category-wrap">
+                    <div class="categories-menu sidebar" id="sidebar">
+                        <aside class=" ">
+                            <!-- top search bar  -->
+                            <div class="search-bar">
+                                <input class="search-input" type="text" name="search-bar" placeholder="Enter to search">
+                                <button class="search-btn"></button>
+                            </div>
+                            <!-- user profile  -->
+                            <div class="user component">
+                                <!-- profile pic  -->
+                                <div class="user-info">
+                                    <img src="assets/images/profile-img.jpg" alt="profile images">
+                                    <h6 class="user-name">john wise</h6>
+                                </div>
+                                <!-- user menu  -->
+                                <ul class="user-navbar">
+                                    <li>
+                                        <a class="" href="index.html">Forum</a>
+                                    </li>
+                                    <li>
+                                        <a href="notfication.html">Notification</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-active" href="message.html">Message</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- group component  -->
+                            <div class="group component">
+                                <p class="component-label">my group</p>
+                                <p class="empty-text">You don't have any group</p>
+
+                                <!-- group menu  -->
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/group-icon.png" alt="join group icon">
+                                        <a href="">Join Groups</a>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/create-group.png" alt="create group icon">
+                                        <a href="">Create Group</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- categories  -->
+                            <div class="categories-items component">
+                                <p class="component-label">Categories</p>
+                                <ul>
+                                    <li>
+                                        <a href="/cursussen/de-basis-van-fotografie">De Basis van Fotografie</a>
+                                    </li>
+                                    <li><a href="/cursussen/fotografie">Fotografie</a></li>
+                                    <li><a href="/cursussen/lightroom">Lightroom</a></li>
+                                    <li><a href="/cursussen/photoshop">Photoshop</a></li>
+                                    <li><a href="/cursussen/luminar">Luminar</a></li>
+                                    <li>
+                                        <a href="/cursussen/creatieve-fotografie">Creatieve Fotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/natuurfotografie">Natuurfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/landschapsfotografie">Landschapsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/dierenfotografie">Dierenfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/portretfotografie">Portretfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/studiofotografie">Studiofotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/bruidsfotografie">Bruidsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/productfotografie">Productfotografie</a>
+                                    </li>
+                                    <li><a href="/cursussen/ondernemen">Ondernemen</a></li>
+                                    <li><a href="/cursussen/videografie">Videografie</a></li>
+                                    <li><a href="/cursussen/apps-voor-fotografen">Apps</a></li>
+                                    <li><a href="/cursussen/overige">Overige</a></li>
+                                </ul>
+                            </div>
+                            <!-- suggestions / submit  -->
+                            <div class="submit component">
+                                <div class="notice">
+                                    <p>
+                                        Have suggestions to improve Photofacts?
+                                        <a href="">submit here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+
+        const sidebar = document.getElementById("sidebar")
+        const toggleBtn = document.getElementById("toggleBtn")
+
+        toggleBtn.addEventListener('click', function(){
+            sidebar.classList.toggle("sidebar")
+        })
+
+
+
+
+
+
+
+
+
+
+
+        function likePost(element) {
+            const likeCount = element.querySelector('.like-count');
+            let count = parseInt(likeCount.textContent);
+            likeCount.textContent = count + 1;
+        }
+
+
+        var i = 0;
+        function read() {
+            if (!i) {
+                document.getElementById("more").style.
+                    display = "inline";
+                document.getElementById("dots").style.
+                    display = "none";
+                document.getElementById("read").innerHTML = "see less";
+                i = 1;
+
+            } else {
+                document.getElementById("more").style.
+                    display = "none";
+                document.getElementById("dots").style.
+                    display = "inline";
+                document.getElementById("read").innerHTML = "see more";
+                i = 0;
+            }
+        }
+
+
+        document.querySelectorAll('.posted-image, .posted-video').forEach((media, index) => {
+            media.addEventListener('click', () => {
+                const mediaElements = document.querySelectorAll('.posted-image, .posted-video');
+                const carouselInner = document.querySelector('.carousel-inner');
+                carouselInner.innerHTML = '';
+
+                mediaElements.forEach((element, i) => {
+                    const div = document.createElement('div');
+                    div.classList.add('carousel-item');
+                    if (i === index) div.classList.add('active');
+
+                    if (element.tagName === 'IMG') {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = element.src;
+                        imgElement.classList.add('d-block', 'w-100');
+                        div.appendChild(imgElement);
+                    } else if (element.tagName === 'IFRAME') {
+                        const iframeElement = document.createElement('iframe');
+                        iframeElement.src = element.src;
+                        iframeElement.classList.add('d-block', 'w-100');
+                        iframeElement.style.height = '500px';
+                        div.appendChild(iframeElement);
+                    }
+
+                    carouselInner.appendChild(div);
+                });
+            });
+        });
+
+
+
+    </script>
+</body>
+
+</html>

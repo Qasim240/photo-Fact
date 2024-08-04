@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <nav class="top-nav py-2">
+        <div class="container">
+            <div class="d-flex text-white justify-content-between gap-lg-5">
+                <div class="d-flex gap-3">
+                    <div class="d-flex">
+                        <span class="me-2 d-lg-block d-none">
+
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="16" height="16" fill="url(#pattern0_2_1701)" />
+                                <defs>
+                                    <pattern id="pattern0_2_1701" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_2_1701" transform="scale(0.0526316)" />
+                                    </pattern>
+                                    <image id="image0_2_1701" width="19" height="19"
+                                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAE6ADAAQAAAABAAAAEwAAAAAgb1CmAAACjklEQVQ4EYWUyWtTURTG815MCFhLXUQ3JgRcSHGlBskAQhQLQSxFbRYK4kLRrVIt/geiguJOXBQXgogDToVWQhQzQhYqunJCAy6U2lIVUqOJv+819xFDmx4470zf/c4dn+VZQkql0iDpcTSNruuAfMOftizrfCwWe9WRd1yrOwHRDXIH0e/oPbQsv9VqDUASwx9Bg8S3E4nEKL4rLlkul+sLBALvqKxn0AE633FRXU65XN4vMnBzzWZzI6Rq7FllcBB9UByPx90GptZt1aharfobjcZHCD9RXyOMrQ+dbmGCtVotqJilTqLT5PsVLyXRaLRB4w3U+oQXxs7n82GmPIruzWQyf4vF4iPy2vjd5E4I1EuY2RD1NDybbK/Xe4HgF+sWiYfiZlkJZIcXveW/LPkJ1Rl4LmmZwwzSCTqC/6btNiEutf2VzHUAQyILoM8MGoLnbf8Pe3LM5HtZJpCn7nUOAGfGgDnqibbvZ2OPmnwvywRmVXfIbNtea8DJZPIrnS6242uc6DZTW86CH1BN92yBYAf2phISDuM0p5rWYVCrQnic9H1mPYYdJD9Vr9cnUqnUT+GZTAJcUzN7jB5SslMEYNAL5QBeRT8Tj6F7SF3hkmcNntoR/KxNtzM4/ZVKRSBXOPJ5dAuDL7eTfre46PhkCoVCHBOE55TNHr0neEDg3DMBOgXCk9Qi5PQXeYi+pMEU+Si+lljEZOF57b5DTm6e5A+eVFgvQcCVhDFvwUQg9tOgZa6G9iVCYXUoFPoNaLgXEVuyE8wCmJDP5wuLSHh3ZgogtADexeqf9QXVb6gCeJal6vi34+/DhtBJiEb04PEd+Y/MJOm6FcKzDNxFzr2DxHPET6md43VUDN7Yf5j8EvYpVpQMAAAAAElFTkSuQmCC" />
+                                </defs>
+                            </svg>
+                        </span>
+                        <span>00 31 24 359 44 13</span>
+                    </div>
+                    <div class="d-lg-block d-none">
+                        <span class="me-2">
+
+                            <svg width="86" height="16" viewBox="0 0 86 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect width="86" height="16" fill="url(#pattern0_2_1703)" />
+                                <defs>
+                                    <pattern id="pattern0_2_1703" patternContentUnits="objectBoundingBox" width="1"
+                                        height="1">
+                                        <use xlink:href="#image0_2_1703"
+                                            transform="matrix(0.0105263 0 0 0.0565789 0 -0.00921053)" />
+                                    </pattern>
+                                    <image id="image0_2_1703" width="95" height="18"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+
+
+
+                        </span>
+                        <span>9.3 by 7,103 members</span>
+                    </div>
+                </div>
+
+                <!-- Logout -->
+                <div class="d-flex align-items-center gap-3">
+                    <span class="text-white border-e userName pe-2">John Wise</span>
+                    <button class="text-white btn bg-transparent shadow-0 p-0">log out</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg text-white py-3">
+        <div class="container">
+            <a class="text-wite" href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-black"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+                </ul>
+                <span class="navbar-text">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
+
+                        <li>home</li>
+                        <li>photography courses</li>
+                        <li>vip</li>
+                        <li>learning paths</li>
+                        <li>forum</li>
+                        <li>blog</li>
+
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+      <div class="text-end">
+        <button class="btn d-lg-none d-block" id="toggleBtn">toggle</button>
+            </div>
+        <div id="main_wrap">
+          
+            <!-- sidebar -->
+            <div class="midwhi">
+                <div class="content-category-wrap">
+                    <div class="categories-menu sidebar" id="sidebar">
+                        <aside>
+                            <!-- top search bar  -->
+                            <div class="search-bar">
+                                <input class="search-input" type="text" name="search-bar" placeholder="Enter to search">
+                                <button class="search-btn"></button>
+                            </div>
+                            <!-- user profile  -->
+                            <div class="user component">
+                                <!-- profile pic  -->
+                                <div class="user-info">
+                                    <img src="assets/images/profile-img.jpg" alt="profile images">
+                                    <h6 class="user-name">john wise</h6>
+                                </div>
+                                <!-- user menu  -->
+                                <ul class="user-navbar">
+                                    <li>
+                                        <a class="" href="index.html">Forum</a>
+                                    </li>
+                                    <li>
+                                        <a href="notfication.html" >Notification</a>
+                                    </li>
+                                    <li>
+                                        <a class="page-active" href="message.html" 
+                                       >Message</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- group component  -->
+                            <div class="group component">
+                                <p class="component-label">my group</p>
+                                <p class="empty-text">You don't have any group</p>
+
+                                <!-- group menu  -->
+                                <ul>
+                                    <li>
+                                        <img src="assets/images/group-icon.png" alt="join group icon">
+                                        <a href="">Join Groups</a>
+                                    </li>
+                                    <li>
+                                        <img src="assets/images/create-group.png" alt="create group icon">
+                                        <a href="">Create Group</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- categories  -->
+                            <div class="categories-items component">
+                                <p class="component-label">Categories</p>
+                                <ul>
+                                    <li>
+                                        <a href="/cursussen/de-basis-van-fotografie">De Basis van Fotografie</a>
+                                    </li>
+                                    <li><a href="/cursussen/fotografie">Fotografie</a></li>
+                                    <li><a href="/cursussen/lightroom">Lightroom</a></li>
+                                    <li><a href="/cursussen/photoshop">Photoshop</a></li>
+                                    <li><a href="/cursussen/luminar">Luminar</a></li>
+                                    <li>
+                                        <a href="/cursussen/creatieve-fotografie">Creatieve Fotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/natuurfotografie">Natuurfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/landschapsfotografie">Landschapsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/dierenfotografie">Dierenfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/portretfotografie">Portretfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/studiofotografie">Studiofotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/bruidsfotografie">Bruidsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/productfotografie">Productfotografie</a>
+                                    </li>
+                                    <li><a href="/cursussen/ondernemen">Ondernemen</a></li>
+                                    <li><a href="/cursussen/videografie">Videografie</a></li>
+                                    <li><a href="/cursussen/apps-voor-fotografen">Apps</a></li>
+                                    <li><a href="/cursussen/overige">Overige</a></li>
+                                </ul>
+                            </div>
+                            <!-- suggestions / submit  -->
+                            <div class="submit component">
+                                <div class="notice">
+                                    <p>
+                                        Have suggestions to improve Photofacts?
+                                        <a href="">submit here</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                    <div class="content-box position-relative">
+                      <div class="perfecr-center d-none">
+                        <div class="text-center">
+                            <h2 class="text-20-gray">No conversation</h2>
+                            <p class="grey-text">You can write and send a message right now</p>
+                        </div>
+                    </div>
+
+                        <div>
+                          <div class="content-top-heading-wrapper d-flex align-items-center justify-content-between">
+                            <div class="content-top-heading ">
+                           <div>
+                            <h2 class="main-heading">Message</h2>
+                            <p>
+                              Join our community and start engaging with other users
+                              through seamless messaging.
+                            </p>
+                           </div>
+                            </div>
+                            <button class="button"  for="uploadvideo" 
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            New Message</button>
+                          </div>
+
+                        </div>
+                       
+
+                    <a href="msg.Details.html">
+                      <div class="notification-wrapper mt-3 position-relative">
+                        <div class="unread-dot"></div>
+                              <img class="profile-img" src="assets/images/profileicon.png" alt="">
+                          
+                          <div>
+                            <div class="d-flex justify-content-between mb-2">
+                              <div class="name">Ynske Lankreijer</div>
+                              <span class="msg-date">Saturday, March 30, 2024, 5:05 PM</span>
+                            </div>
+                              <p class="unread-msg msg-info">Hi! Appreciate your reply. It helps me a lot. Would give more explanation based on your last reply about Sony A6000 ...</p>
+                          </div>
+                      </div>
+
+
+                    </a>
+                        <div class="notification-wrapper mt-3 position-relative">
+                        
+                              <img class="profile-img" src="assets/images/profileicon.png" alt="">
+                          
+                          <div>
+                            <div class="d-flex justify-content-between mb-2">
+                              <div class="name">Ynske Lankreijer</div>
+                              <span class="msg-date">Saturday, March 30, 2024, 5:05 PM</span>
+                            </div>
+                              <p class="read-msg msg-info">Hi! Appreciate your reply. It helps me a lot. Would give more explanation based on your last reply about Sony A6000 ...</p>
+                          </div>
+                      </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popular-courses">
+            <div class="midwhi">
+                <h2 class="main-heading">Popular courses</h2>
+
+                <div class="popular-courses-wrap">
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div class="card-description">
+                            <div class="card-info">
+                                <p>advanced | 28 videos</p>
+                                <img src="https://i.ibb.co/0mNdjsC/45.png" alt="">
+                            </div>
+                            <div class="card-heading">
+                                <a href="#">Lightroom classic catalog for advanced users</a>
+                                <p>- Nando harmsen -</p>
+                            </div>
+
+                            <a href="#" class="card-action">to look at</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div class="card-description">
+                            <div class="card-info">
+                                <p>advanced | 25 videos</p>
+                                <img src="https://i.ibb.co/0mNdjsC/45.png" alt="">
+                            </div>
+                            <div class="card-heading">
+                                <a href="#">Photoshop tips &amp; tricks</a>
+                                <p>- Meerdere experts -</p>
+                            </div>
+
+                            <a href="#" class="card-action">to look at</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div class="card-description">
+                            <div class="card-info">
+                                <p>advanced | 21 videos</p>
+                                <img src="https://i.ibb.co/0mNdjsC/45.png" alt="">
+                            </div>
+                            <div class="card-heading">
+                                <a href="#">lightroom classic library module</a>
+                                <p>- nando harmsen -</p>
+                            </div>
+
+                            <a href="#" class="card-action">to look at</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <a href="#" class="card-img">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div class="card-description">
+                            <div class="card-info">
+                                <p>advanced | 35 videos</p>
+                                <img src="https://i.ibb.co/0mNdjsC/45.png" alt="">
+                            </div>
+                            <div class="card-heading">
+                                <a href="#">masterclass macro photography</a>
+                                <p>- mike muizebelt -</p>
+                            </div>
+
+                            <a href="#" class="card-action">to look at</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+<!-- footer -->
+<div class="course container text-light ">
+
+ 
+    <div class="course-warp container">
+        <h4 style="padding-left:62px ;">Online Photography course</h4>
+        <!-- first row -->
+       <div class="row style">
+       
+        <div class="col-lg-3 col-md-3 ">
+              
+            <ul>
+                <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
+                <li><a href="">course Get started with photography</a></li>
+                <li><a href="">course everything about depth of field</a></li>
+                <li><a href="">course Get started with lighting</a></li>
+                <li><a href="">Advance focusing course</a></li>
+                <li><a href="">History of photography course</a></li>
+                <li><a href="">Course History of photography (1900-1950)</a></li>
+                <li><a href="">basic photography course</a></li>
+                <li><a href="">getting started with canon EOS R course</a></li>
+
+            </ul>
+         </div>
+         
+             <div class="col-lg-3 col-md-3 ">
+              
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    <li><a href="">Advance focusing course</a></li>
+                    <li><a href="">History of photography course</a></li>
+                    <li><a href="">Course History of photography (1900-1950)</a></li>
+                    <li><a href="">basic photography course</a></li>
+                    <li><a href="">getting started with canon EOS R course</a></li>
+                    <li><a href="">HDR photography course</a></li>
+                    <li><a href="">Nigt photography course</a></li>
+                    
+                </ul>
+             </div>
+             <div class="col-lg-3 col-md-3 ">
+              
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    <li><a href="">Advance focusing course</a></li>
+                    <li><a href="">History of photography course</a></li>
+                    <li><a href="">Course History of photography (1900-1950)</a></li>
+                    <li><a href="">basic photography course</a></li>
+                    <li><a href="">getting started with canon EOS R course</a></li>
+                </ul>
+                 </div>
+             <div class="col-lg-3 col-md-3 ">
+              
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    <li><a href="">Advance focusing course</a></li>
+                    <li><a href="">History of photography course</a></li>
+                    <li><a href="">Course History of photography (1900-1950)</a></li>
+                    <li><a href="">basic photography course</a></li>
+                    <li><a href="">getting started with canon EOS R course</a></li>
+                </ul>
+             </div>
+         </div>
+<!-- second row -->
+         <div class="row style">
+       
+            <div class="col-lg-3 col-md-3 ">
+                  
+                <ul>
+                    <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    
+    
+                </ul>
+             </div>
+             
+                 <div class="col-lg-3 col-md-3 ">
+                    
+                    <ul>
+                        <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                        <li><a href="">course Get started with photography</a></li>
+                        <li><a href="">course everything about depth of field</a></li>
+                        <li><a href="">course Get started with lighting</a></li>
+                        <li><a href="">Advance focusing course</a></li>
+                        <li><a href="">History of photography course</a></li>
+                        <li><a href="">Course History of photography (1900-1950)</a></li>
+                        <li><a href="">basic photography course</a></li>
+                        <li><a href="">getting started with canon EOS R course</a></li>
+                       
+                    </ul>
+                 </div>
+                 <div class="col-lg-3 col-md-3 ">
+                  
+                    <ul>
+                        <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                        <li><a href="">course Get started with photography</a></li>
+                        <li><a href="">course everything about depth of field</a></li>
+                        <li><a href="">course Get started with lighting</a></li>
+                        <li><a href="">Advance focusing course</a></li>
+                        <li><a href="">History of photography course</a></li>
+                       
+                    </ul>
+                     </div>
+                 <div class="col-lg-3 col-md-3 ">
+                  
+                    <ul>
+                        <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a></li>
+                        <li><a href="">course Get started with photography</a></li>
+                        <li><a href="">course everything about depth of field</a></li>
+                        <li><a href="">course Get started with lighting</a></li>
+                        <li><a href="">Advance focusing course</a></li>
+                        <li><a href="">History of photography course</a></li>
+                        <li><a href="">Course History of photography (1900-1950)</a></li>
+                        <li><a href="">basic photography course</a></li>
+                        <li><a href="">getting started with canon EOS R course</a></li>
+                    </ul>
+                 </div>
+             </div>
+<!-- third row -->
+<div class="row style">
+       
+    <div class="col-lg-3 col-md-3 ">
+          
+        <ul>
+            <li style="color: yellowgreen;"><a href="">Animal photography</a></li>
+            <li><a href="">course Get started with photography</a></li>
+            <li><a href="">course everything about depth of field</a></li>
+           
+            
+
+        </ul>
+     </div>
+     
+         <div class="col-lg-3 col-md-3 ">
+            
+            <ul>
+                <li style="color: yellowgreen;"><a href="link1.html">Portrait photography</a></li>
+                <li><a href="">course Get started with photography</a></li>
+                <li><a href="">course everything about depth of field</a></li>
+                <li><a href="">course Get started with lighting</a></li>
+                <li><a href="">Advance focusing course</a></li>
+                <li><a href="">History of photography course</a></li>
+                <li><a href="">Course History of photography (1900-1950)</a></li>
+                <li><a href="">basic photography course</a></li>
+                <li><a href="">getting started with canon EOS R course</a></li>
+               
+            </ul>
+         </div>
+         <div class="col-lg-3 col-md-3 ">
+          
+            <ul>
+                <li style="color: yellowgreen;"><a href="link1.html">Studio photography</a></li>
+                <li><a href="">course Get started with photography</a></li>
+                <li><a href="">course everything about depth of field</a></li>
+                
+               
+            </ul>
+             </div>
+         <div class="col-lg-3 col-md-3 ">
+          
+            <ul>
+                <li style="color: yellowgreen;"><a href="link1.html">wedding photography</a></li>
+                <li><a href="">course Get started with photography</a></li>
+              
+                
+            </ul>
+         </div>
+     </div>
+     <!-- fourth row -->
+     <div class="row style">
+       
+        <div class="col-lg-3 col-md-3 ">
+              
+            <ul>
+                <li style="color: yellowgreen;"><a href="">Product photography course</a></li>
+                <li><a href="">course Get started with photography</a></li>
+                <li><a href="">course everything about depth of field</a></li>
+               
+                
+    
+            </ul>
+         </div>
+         
+             <div class="col-lg-3 col-md-3 ">
+                
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">Enterpreneurship course</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    
+                   
+                </ul>
+             </div>
+             <div class="col-lg-3 col-md-3 ">
+              
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">Video grapy course</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">Basic video editing course with corel video studio X10</a></li>
+                    
+                   
+                </ul>
+                 </div>
+             <div class="col-lg-3 col-md-3 ">
+              
+                <ul>
+                    <li style="color: yellowgreen;"><a href="link1.html">course App</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about </a></li>
+                  
+                    
+                </ul>
+             </div>
+         </div>
+         <!-- fifith row -->
+         <div class="row style">
+       
+            <div class="col-lg-3 col-md-3 ">
+                  
+                <ul>
+                    <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
+                    <li><a href="">course Get started with photography</a></li>
+                    <li><a href="">course everything about depth of field</a></li>
+                    <li><a href="">course Get started with lighting</a></li>
+                    <li><a href="">Advance focusing course</a></li>
+                    <li><a href="">History of photography course</a></li>
+                    <li><a href="">Course History of photography (1900-1950)</a></li>
+                    <li><a href="">basic photography course</a></li>
+                    <li><a href="">getting started with canon EOS R course</a></li>
+    
+                </ul>
+             </div>
+             
+           
+             
+             
+             </div>
+
+
+    </div>
+  
+   </div>
+
+
+
+   <footer class="footer pt-3 pb-4">
+    <div class="container footer-warp test-center text-ms-4">
+     <div class="row  text-md-left">
+  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+<h2>helo</h2>
+  </div>
+     </div>
+    </div>
+</footer>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+     <!-- Modal -->
+     <div class="modal media-popup fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button class="primary-color btn w-100">New Message</button>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             </div>
+             <div class="modal-body p-3">
+               <div class="d-flex gap-1 border pe-3 ps-2 py-1 align-items-center rounded rounded-lg">
+                <span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7656 14.6895L10.6934 9.61719C11.4805 8.59961 11.9062 7.35547 11.9062 6.04688C11.9062 4.48047 11.2949 3.01172 10.1895 1.9043C9.08398 0.796875 7.61133 0.1875 6.04688 0.1875C4.48242 0.1875 3.00977 0.798828 1.9043 1.9043C0.796875 3.00977 0.1875 4.48047 0.1875 6.04688C0.1875 7.61133 0.798828 9.08398 1.9043 10.1895C3.00977 11.2969 4.48047 11.9062 6.04688 11.9062C7.35547 11.9062 8.59766 11.4805 9.61523 10.6953L14.6875 15.7656C14.7024 15.7805 14.72 15.7923 14.7395 15.8004C14.7589 15.8084 14.7797 15.8126 14.8008 15.8126C14.8218 15.8126 14.8427 15.8084 14.8621 15.8004C14.8815 15.7923 14.8992 15.7805 14.9141 15.7656L15.7656 14.916C15.7805 14.9011 15.7923 14.8835 15.8004 14.864C15.8084 14.8446 15.8126 14.8238 15.8126 14.8027C15.8126 14.7817 15.8084 14.7609 15.8004 14.7414C15.7923 14.722 15.7805 14.7043 15.7656 14.6895ZM9.14062 9.14062C8.3125 9.9668 7.21484 10.4219 6.04688 10.4219C4.87891 10.4219 3.78125 9.9668 2.95312 9.14062C2.12695 8.3125 1.67188 7.21484 1.67188 6.04688C1.67188 4.87891 2.12695 3.7793 2.95312 2.95312C3.78125 2.12695 4.87891 1.67188 6.04688 1.67188C7.21484 1.67188 8.31445 2.125 9.14062 2.95312C9.9668 3.78125 10.4219 4.87891 10.4219 6.04688C10.4219 7.21484 9.9668 8.31445 9.14062 9.14062Z" fill="#6B737E"/>
+                    </svg>
+                    
+                </span>
+                <input class="form-control border-0 shadow-none px-1" type="search" placeholder="Search person">
+               </div>
+              
+                 
+               
+             </div>
+            
+         </div>
+     </div>
+ </div>
+
+
+
+
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        function likePost(element) {
+            const likeCount = element.querySelector('.like-count');
+            let count = parseInt(likeCount.textContent);
+            likeCount.textContent = count + 1;
+        }
+
+
+        var i = 0;
+        function read() {
+            if (!i) {
+                document.getElementById("more").style.
+                    display = "inline";
+                document.getElementById("dots").style.
+                    display = "none";
+                document.getElementById("read").innerHTML = "see less";
+                i = 1;
+
+            } else {
+                document.getElementById("more").style.
+                    display = "none";
+                document.getElementById("dots").style.
+                    display = "inline";
+                document.getElementById("read").innerHTML = "see more";
+                i = 0;
+            }
+        }
+
+
+        document.querySelectorAll('.posted-image, .posted-video').forEach((media, index) => {
+            media.addEventListener('click', () => {
+                const mediaElements = document.querySelectorAll('.posted-image, .posted-video');
+                const carouselInner = document.querySelector('.carousel-inner');
+                carouselInner.innerHTML = '';
+
+                mediaElements.forEach((element, i) => {
+                    const div = document.createElement('div');
+                    div.classList.add('carousel-item');
+                    if (i === index) div.classList.add('active');
+
+                    if (element.tagName === 'IMG') {
+                        const imgElement = document.createElement('img');
+                        imgElement.src = element.src;
+                        imgElement.classList.add('d-block', 'w-100');
+                        div.appendChild(imgElement);
+                    } else if (element.tagName === 'IFRAME') {
+                        const iframeElement = document.createElement('iframe');
+                        iframeElement.src = element.src;
+                        iframeElement.classList.add('d-block', 'w-100');
+                        iframeElement.style.height = '500px';
+                        div.appendChild(iframeElement);
+                    }
+
+                    carouselInner.appendChild(div);
+                });
+            });
+        });
+
+
+
+
+const sidebar = document.getElementById("sidebar")
+        const toggleBtn = document.getElementById("toggleBtn")
+
+        toggleBtn.addEventListener('click', function(){
+          sidebar.classList.toggle("sidebar")
+        })
+    </script>
+</body>
+
+</html>
