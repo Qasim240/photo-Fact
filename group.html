@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Home</title>
 </head>
@@ -70,18 +69,17 @@
     <nav class="navbar navbar-expand-lg text-white py-3">
         <div class="container">
             <a class="text-wite cursor-pointer" href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
-            <button class="navbar-toggler nav-mobile-toggle text-white py-2 " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                aria-label="Toggle navigation">
-                Menu
+            <button class="navbar-toggler nav-mobile-toggle text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+               Menu
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
 
-                </ul>
-                <span class="navbar-text">
+                        </ul>
+                        <span class="navbar-text">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
 
                         <li>home</li>
@@ -93,22 +91,23 @@
 
                     </ul>
                 </span>
-            </div>
-        </div>
+                    </div>
+                </div>
     </nav>
 
-
     <div class="container">
+        <div class="text-end">
+
+        </div>
         <div class="midwhi">
             <div id="main_wrap">
-                <!-- sidebar -->
-                <button class="toggle-btn" onclick="toggleSidebar()"><img src="assets/images/toggler.svg"
-                        alt=""></button>
 
-                <div class="content-category-wrap position-relative">
+                <button class="toggle-btn" onclick="toggleSidebar()"><img src="assets/images/toggler.svg" alt=""></button>
+
+                <!-- sidebar -->
+                <div class="content-category-wrap">
 
                     <div class="categories-menu sidebar" id="sidebar">
-
                         <aside>
                             <!-- top search bar  -->
                             <div class="search-bar">
@@ -124,27 +123,34 @@
                                 </div>
                                 <!-- user menu  -->
                                 <ul class="user-navbar">
-                                    <li><a class="page-active" href="index.html">Forum</a></li>
-                                    <li><a href="notfication.html" class="active">Notification</a></li>
-                                    <li><a href="message.html">Message</a></li>
+                                    <li>
+                                        <a class="" href="index.html">Forum</a>
+                                    </li>
+                                    <li>
+                                        <a href="notfication.html" class="active">Notification</a>
+                                    </li>
+                                    <li>
+                                        <a href="message.html">Message</a>
+                                    </li>
                                 </ul>
                             </div>
                             <!-- group component  -->
                             <div class="group component">
                                 <p class="component-label">my group</p>
                                 <p class="empty-text">You don't have any group</p>
+
                                 <!-- group menu  -->
                                 <ul>
+
                                     <li>
-                                        <a href="group.html">SG Photography</a>
+                                        <a class="page-active" href="group.html">SG Photography</a>
                                     </li>
                                     <li>
                                         <img src="assets/images/group-icon.png" alt="join group icon">
                                         <a href="">Join Groups</a>
                                     </li>
-                                    <li>
-                                        <img src="assets/images/create-group.png" alt="create group icon">
-                                        <a href="">Create Group</a>
+                                    <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <img src="assets/images/create-group.png" alt="create group icon"> Create Group
                                     </li>
                                 </ul>
                             </div>
@@ -152,19 +158,37 @@
                             <div class="categories-items component">
                                 <p class="component-label">Categories</p>
                                 <ul>
-                                    <li><a href="/cursussen/de-basis-van-fotografie">De Basis van Fotografie</a></li>
+                                    <li>
+                                        <a href="/cursussen/de-basis-van-fotografie">De Basis van Fotografie</a>
+                                    </li>
                                     <li><a href="/cursussen/fotografie">Fotografie</a></li>
                                     <li><a href="/cursussen/lightroom">Lightroom</a></li>
                                     <li><a href="/cursussen/photoshop">Photoshop</a></li>
                                     <li><a href="/cursussen/luminar">Luminar</a></li>
-                                    <li><a href="/cursussen/creatieve-fotografie">Creatieve Fotografie</a></li>
-                                    <li><a href="/cursussen/natuurfotografie">Natuurfotografie</a></li>
-                                    <li><a href="/cursussen/landschapsfotografie">Landschapsfotografie</a></li>
-                                    <li><a href="/cursussen/dierenfotografie">Dierenfotografie</a></li>
-                                    <li><a href="/cursussen/portretfotografie">Portretfotografie</a></li>
-                                    <li><a href="/cursussen/studiofotografie">Studiofotografie</a></li>
-                                    <li><a href="/cursussen/bruidsfotografie">Bruidsfotografie</a></li>
-                                    <li><a href="/cursussen/productfotografie">Productfotografie</a></li>
+                                    <li>
+                                        <a href="/cursussen/creatieve-fotografie">Creatieve Fotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/natuurfotografie">Natuurfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/landschapsfotografie">Landschapsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/dierenfotografie">Dierenfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/portretfotografie">Portretfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/studiofotografie">Studiofotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/bruidsfotografie">Bruidsfotografie</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cursussen/productfotografie">Productfotografie</a>
+                                    </li>
                                     <li><a href="/cursussen/ondernemen">Ondernemen</a></li>
                                     <li><a href="/cursussen/videografie">Videografie</a></li>
                                     <li><a href="/cursussen/apps-voor-fotografen">Apps</a></li>
@@ -183,12 +207,40 @@
                         </aside>
                     </div>
 
-
                     <div class="content-box">
                         <div>
-                            <h1 class="main-hd">Forums</h1>
-                            <p class="p-0">Find the best answer to your question and help other members here by
-                                answering their questions.</p>
+                            <div class="d-flex justify-content-between flex-wrap mb-3">
+                                <div>
+                                    <h1 class="main-hd">SG Photography</h1>
+                                    <div class="mb-2">
+                                        <span class="px-2" style="font-size: 14px; color: #454E5C; border-right:2px solid #C7C7C7;">
+                                            <span>
+                                                <svg class="mb-1" width="14" height="19" viewBox="0 0 14 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1.99967 18.3335C1.54134 18.3335 1.14898 18.1703 0.822591 17.8439C0.496202 17.5175 0.333008 17.1252 0.333008 16.6668V8.3335C0.333008 7.87516 0.496202 7.4828 0.822591 7.15641C1.14898 6.83002 1.54134 6.66683 1.99967 6.66683H2.83301V5.00016C2.83301 3.84739 3.23926 2.86475 4.05176 2.05225C4.86426 1.23975 5.8469 0.833496 6.99967 0.833496C8.15245 0.833496 9.13509 1.23975 9.94759 2.05225C10.7601 2.86475 11.1663 3.84739 11.1663 5.00016V6.66683H11.9997C12.458 6.66683 12.8504 6.83002 13.1768 7.15641C13.5031 7.4828 13.6663 7.87516 13.6663 8.3335V16.6668C13.6663 17.1252 13.5031 17.5175 13.1768 17.8439C12.8504 18.1703 12.458 18.3335 11.9997 18.3335H1.99967ZM6.99967 14.1668C7.45801 14.1668 7.85037 14.0036 8.17676 13.6772C8.50315 13.3509 8.66634 12.9585 8.66634 12.5002C8.66634 12.0418 8.50315 11.6495 8.17676 11.3231C7.85037 10.9967 7.45801 10.8335 6.99967 10.8335C6.54134 10.8335 6.14898 10.9967 5.82259 11.3231C5.4962 11.6495 5.33301 12.0418 5.33301 12.5002C5.33301 12.9585 5.4962 13.3509 5.82259 13.6772C6.14898 14.0036 6.54134 14.1668 6.99967 14.1668ZM4.49967 6.66683H9.49967V5.00016C9.49967 4.30572 9.25662 3.71544 8.77051 3.22933C8.2844 2.74322 7.69412 2.50016 6.99967 2.50016C6.30523 2.50016 5.71495 2.74322 5.22884 3.22933C4.74273 3.71544 4.49967 4.30572 4.49967 5.00016V6.66683Z"
+                                                        fill="#454E5C" />
+                                                </svg>
+                                            </span>Private group</span>
+                                        <span class="px-1" style="font-size: 14px; color: #444444; font-weight: bold;">20
+                                            members</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center no-after">
+                                    <button class="button" for="uploadvideo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                        Invite Member</button>
+                                    <div class="dropdown ">
+                                        <button class="btn shadow-none dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                              ⋮
+                                            </button>
+                                        <ul class="dropdown-menu overflow-hidden" aria-labelledby="dropdownMenuButton">
+                                            <li><a class="dropdown-item cursor-pointer" href="#" data-bs-toggle="modal" data-bs-target="#editModal">Edit</a></li>
+                                            <li><a class="dropdown-item cursor-pointer text-danger" href="#" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="p-0">Find the best answer to your question and help other members here by answering their questions.</p>
 
                             <div class="message-inpu-container">
                                 <div class="message-input-wrapper">
@@ -259,12 +311,10 @@
 
                                                 <div class="input-image">
                                                     <button>
-                                                        <img src="./images/Photofact Academy Update/Photo Facts/Icon/close.png"
-                                                            alt="">
+                                                        <img src="assets/images/user-avatar-4.pngIcon/close.png" alt="">
                                                     </button>
                                                     <div class="custom-image">
-                                                        <img src="./images/Photofact Academy Update/Photo Facts/Icon/video.png"
-                                                            alt="">
+                                                        <img src="assets/images/user-avatar-4.pngIcon/video.png" alt="">
                                                         <p class="custom-image-text">
                                                             https://www.youtube.com...
                                                         </p>
@@ -275,8 +325,7 @@
                                     </div>
                                     <div class="message-input-buttonlist mt-3">
                                         <div>
-                                            <select class="form-select form-select-custom"
-                                                aria-label="Custom select example">
+                                            <select class="form-select form-select-custom" aria-label="Custom select example">
                                                 <option selected>General</option>
                                                 <option value="1">Action</option>
                                                 <option value="2">Another action</option>
@@ -290,8 +339,7 @@
                                             <label class="cursor-pointer" for="uploadimg">
                                                 <img src="assets/images/image.png" alt="">
                                             </label> -->
-                                            <button class="cursor-pointer" for="uploadvideo" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop">
+                                            <button class="cursor-pointer" for="uploadvideo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <img src="assets/images/image.png" alt="">
                                             </button>
                                         </div>
@@ -303,8 +351,7 @@
                                                 <img src="assets/images/video.png" alt="">
                                             </label> -->
 
-                                            <button class="cursor-pointer" for="uploadvideo" data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop">
+                                            <button class="cursor-pointer" for="uploadvideo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                                 <img src="assets/images/video.png" alt="">
                                             </button>
                                         </div>
@@ -328,32 +375,22 @@
                                 </div>
 
                                 <div class="mt-2 color-grey">
-                                    <p>I have a Godox AD200 pro flash (great item) and would like to buy a beauty dish
-                                        with grid for it. Anyone have any advice for this? I'm also not sure what the
-                                        maximum width is that is suitable for this flash. I have
-                                        a bracket with a Bowens connection, so I am not tied to the connection of the
-                                        flash itself.</p>
+                                    <p>I have a Godox AD200 pro flash (great item) and would like to buy a beauty dish with grid for it. Anyone have any advice for this? I'm also not sure what the maximum width is that is suitable for this flash. I have
+                                        a bracket with a Bowens connection, so I am not tied to the connection of the flash itself.</p>
 
-                                    <div
-                                        class="text-center cursor-pointer d-flex gap-3 flex-wrap justify-content-between">
+                                    <div class="text-center cursor-pointer d-flex gap-3 flex-wrap justify-content-between">
                                         <div class="row justify-content-center">
                                             <div class="col-md-6">
-                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png"
-                                                    alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
                                             </div>
                                             <div class="col-md-6">
-                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png"
-                                                    alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
                                             </div>
                                             <div class="col-md-6">
-                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png"
-                                                    alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                                <img class="posted-image img-fluid" src="assets/images/post-img-1.png" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
                                             </div>
                                             <div class="col-md-6">
-                                                <iframe class="posted-video"
-                                                    src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
-                                                    frameborder="0" style="width:100%; height:280px;"
-                                                    data-bs-toggle="modal" data-bs-target="#mediaModal"></iframe>
+                                                <iframe class="posted-video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" frameborder="0" style="width:100%; height:280px;" data-bs-toggle="modal" data-bs-target="#mediaModal"></iframe>
                                             </div>
                                         </div>
                                     </div>
@@ -389,160 +426,190 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="container my-3">
-                                <div class="post-container">
-                                    <div class="d-flex align-items-start">
-                                        <img src="assets/images/user-avatar.png" alt="">
-                                        <div class="ms-2">
-                                            <span><span class="xs-font">Elja Trum</span> <span
-                                                    class="fs-14 color-grey">post on</span> <span
-                                                    class="xs-font">General</span></span>
-                                            <p class="dtae mb-0 fs-14 color-grey">Saturday, March 30, 2024, 5:05 PM</p>
-                                        </div>
+
+
+
+
+
+                            <div class="post-container my-3">
+                                <div class="d-flex align-items-start">
+                                    <img src="assets/images/user-avatar-2.png" alt="">
+                                    <div class="ms-2">
+                                        <span><span class="xs-font">Elja Trum</span> <span class="fs-14 color-grey">post
+                                                on</span> <span class="xs-font">General</span></span>
+                                        <p class="dtae mb-0 fs-14 color-grey">Saturday, March 30, 2024, 5:05 PM</p>
                                     </div>
-
-                                    <div class="mt-2 color-grey">
-                                        <p>
-                                            This is some initial text. Here is the additional text that will be shown
-                                            when you click "See More". Here is the additional text that will be shown
-                                            when you click "See More". Here is the additional text that will be shown
-                                            when you click "See More".
-                                            <span id="dots">...</span>
-                                            <span id="more" class="more-text">Here is the additional text that will be
-                                                shown when you click "See More".</span>
-                                            <button onclick="toggleText()" id="toggleButton">See More</button>
-                                        </p>
-                                    </div>
-                                    <div class="comment-actions">
-                                        <div class="like-reply mb-3">
-                                            <div class="d-flex align-items-center">
-                                                <div>
-                                                    <input type="checkbox" id="heart" checked="">
-                                                    <label for="heart">
-                                                        2
-                                                    </label>
-
-
-
-                                                </div>
-
-                                                <div class="ms-3">
-                                                    <span class="m-0"><svg width="22" height="22" viewBox="0 0 22 22"
-                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M20.6645 6.9303C20.1386 5.67528 19.3736 4.53455 18.4121 3.5717C17.4535 2.60717 16.3147 1.84032 15.0606 1.31467C13.7757 0.773572 12.3953 0.496205 11.0012 0.499045H10.9543C9.53634 0.506076 8.16525 0.787326 6.87384 1.34045C5.63041 1.87149 4.50236 2.63971 3.55275 3.60217C2.60055 4.56286 1.84432 5.69959 1.32618 6.94905C0.788329 8.24833 0.515795 9.64208 0.524622 11.0483C0.531653 12.6748 0.920716 14.2897 1.64728 15.7334V19.2959C1.64728 19.8912 2.13009 20.374 2.72306 20.374H6.28087C7.73136 21.106 9.33198 21.4911 10.9567 21.499H11.0059C12.4074 21.499 13.7645 21.2272 15.0442 20.6951C16.292 20.1758 17.4265 19.4178 18.384 18.4639C19.3496 17.5053 20.109 16.385 20.641 15.1358C21.1918 13.842 21.4731 12.4662 21.4801 11.0459C21.4848 9.61858 21.2082 8.23342 20.6645 6.9303ZM6.32306 12.124C5.70431 12.124 5.2004 11.6201 5.2004 10.999C5.2004 10.378 5.70431 9.87405 6.32306 9.87405C6.94181 9.87405 7.44571 10.378 7.44571 10.999C7.44571 11.6201 6.94415 12.124 6.32306 12.124ZM11.0012 12.124C10.3824 12.124 9.87853 11.6201 9.87853 10.999C9.87853 10.378 10.3824 9.87405 11.0012 9.87405C11.6199 9.87405 12.1238 10.378 12.1238 10.999C12.1238 11.6201 11.6199 12.124 11.0012 12.124ZM15.6793 12.124C15.0606 12.124 14.5567 11.6201 14.5567 10.999C14.5567 10.378 15.0606 9.87405 15.6793 9.87405C16.2981 9.87405 16.802 10.378 16.802 10.999C16.802 11.6201 16.2981 12.124 15.6793 12.124Z"
-                                                                fill="#C7C7C7" />
-                                                        </svg>
-                                                    </span>3
-                                                </div>
-                                                <span class="ms-3 text-dark">Reply</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-container">
-                                        <div class="comment">
-                                            <img src="assets/images/user-avatar.png" alt="User">
-                                            <div class="comment-body">
-                                                <p class="mb-1"><strong>John Wise</strong> </p>
-                                                <p class="text-muted">Saturday, March 30, 2024, 5:05 PM</p>
-                                                <p class="commented fw-bold">true words <span
-                                                        class="mention">@jynskelankrei</span></p>
-                                                <div class="comment-actions">
-                                                    <div class="like-reply mb-3">
-                                                        <div>
-                                                            <input type="checkbox" id="heart" checked="">
-                                                            <label for="heart">
-                                                                2
-                                                            </label>
-                                                            <span class="ms-3 text-dark">Reply</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="message-input-wrapper border shadow-sm px-3 py-2 rounded rounded-lg  mb-4">
-                                                    <div class="message-input-left">
-                                                        <div class="message-input-avatar">
-                                                            <img src="assets/images/avatar.png" alt="">
-                                                        </div>
-                                                        <div class="message-input-box">
-                                                            <div class="message-input">
-                                                                <input type="text" placeholder="Reply to John">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="message-input-buttonlist">
-                                                        <button disabled="" class="button send-message-button">
-                                                            Post
-                                                        </button>
-                                                    </div>
-                                                </div>
-
-                                                <div class="comment">
-                                                    <img src="assets/images/user-avatar-2.png" alt="User">
-                                                    <div class="comment-body">
-                                                        <p class="mb-1"><strong>Ynske Lankreijer</strong> </p>
-                                                        <p class="text-muted">Saturday, March 30, 2024, 5:05 PM</p>
-                                                        <p class="commented">Thanks <span
-                                                                class="mention fw-bold">@johnwise</span></p>
-                                                        <div class="comment-actions">
-                                                            <div class="like-reply mb-3">
-                                                                <div>
-                                                                    <input type="checkbox" id="heart" checked="">
-                                                                    <label for="heart">
-                                                                        1
-                                                                    </label>
-                                                                    <span class="ms-3 text-dark ">Reply</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="message-input-wrapper border shadow-sm px-3 py-2 rounded rounded-lg mb-4">
-                                                            <div class="message-input-left">
-                                                                <div class="message-input-avatar">
-                                                                    <img src="assets/images/avatar.png" alt="">
-                                                                </div>
-                                                                <div class="message-input-box">
-                                                                    <div class="message-input">
-                                                                        <input type="text"
-                                                                            placeholder="Ynske Lankreijer">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="message-input-buttonlist">
-                                                                <button disabled="" class="button send-message-button">
-                                                                    Post
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="message-input-wrapper">
-                                            <div class="message-input-left">
-                                                <div class="message-input-avatar">
-                                                    <img src="assets/images/avatar.png" alt="">
-                                                </div>
-                                                <div class="message-input-box">
-                                                    <div class="message-input">
-                                                        <input type="text"
-                                                            placeholder="What do you want to ask or share?">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="message-input-buttonlist">
-                                                <button disabled="" class="button send-message-button">
-                                                    Post
-                                                </button>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
                                 </div>
+
+                                <div class="mt-2 color-grey">
+                                    <p>Random shot</p>
+                                    <div class="text-center cursor-pointer d-flex gap-3 flex-wrap justify-content-between">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-6 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-2.png" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                           
+                                          
+                                            <div class="col-md-6">
+                                                <iframe class="posted-video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" frameborder="0" style="width:100%; height:245px;;" data-bs-toggle="modal" data-bs-target="#mediaModal"></iframe>
+                                            </div>
+
+                                          
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="like-reply mb-3">
+                                            <div>
+                                                <input type="checkbox" id="heart" checked />
+                                                <label for="heart">
+                                                    2
+                                                </label>
+                                                <span class="ms-3">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-input-wrapper">
+                                    <div class="message-input-left">
+                                        <div class="message-input-avatar">
+                                            <img src="assets/images/avatar.png" alt="">
+                                        </div>
+                                        <div class="message-input-box">
+                                            <div class="message-input">
+                                                <input type="text" placeholder="What do you want to ask or share?">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-input-buttonlist">
+                                        <button disabled="" class="button send-message-button">
+                                            Post
+                                        </button>
+                                    </div>
+                                </div>
+                               <div class="mt-2">
+                                <p>Last comment on Saturday, March 30, 2024, 5:05 PM</p>
+                               </div>
                             </div>
+
+
+
+                            <div class="post-container my-3">
+                                <div class="d-flex align-items-start">
+                                    <img src="assets/images/user-avatar-3.png" alt="">
+                                    <div class="ms-2">
+                                        <span><span class="xs-font">Elja Trum</span> <span class="fs-14 color-grey">post
+                                                on</span> <span class="xs-font">General</span></span>
+                                        <p class="dtae mb-0 fs-14 color-grey">Saturday, March 30, 2024, 5:05 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-2 color-grey">
+                                    <p class="px-5">Random shot</p>
+                                    <div class="text-center cursor-pointer d-flex gap-3 flex-wrap justify-content-between">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-4 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-2.png" style="width:98%; height:245px;" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                           
+                                          
+                                            <div class="col-md-4">
+                                                <iframe class="posted-video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" frameborder="0" style="width:98%; height:245px;" data-bs-toggle="modal" data-bs-target="#mediaModal"></iframe>
+                                            </div>
+
+                                            <div class="col-md-4 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-4.png" style="width:98%; height:245px;" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="like-reply mb-3">
+                                            <div>
+                                                <input type="checkbox" id="heart" checked />
+                                                <label for="heart">
+                                                    2
+                                                </label>
+                                                <span class="ms-3">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+         
+                            </div>
+
+
+
+
+
+                            <div class="post-container my-3">
+                                <div class="d-flex align-items-start">
+                                    <img src="assets/images/user-avatar-2.png" alt="">
+                                    <div class="ms-2">
+                                        <span><span class="xs-font">Elja Trum</span> <span class="fs-14 color-grey">post
+                                                on</span> <span class="xs-font">General</span></span>
+                                        <p class="dtae mb-0 fs-14 color-grey">Saturday, March 30, 2024, 5:05 PM</p>
+                                    </div>
+                                </div>
+
+                                <div class="mt-2 color-grey">
+                                    <p>Lightroom preset on cook</p>
+                                    <div class="text-center cursor-pointer d-flex gap-3 flex-wrap justify-content-between">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-3 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-5.png" style="width:100%; height:245px;" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                           
+                                            <div class="col-md-3 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-6.png" style="width:100%; height:245px;" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <iframe class="posted-video" src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4" frameborder="0" style="width:100%; height:245px;" data-bs-toggle="modal" data-bs-target="#mediaModal"></iframe>
+                                            </div>
+
+                                          
+                                            <div class="col-md-3 sepreator">
+                                                <img class="posted-image img-fluid"src="assets/images/post-img-7.png" style="width:100%; height:245px;" alt="" data-bs-toggle="modal" data-bs-target="#mediaModal">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="like-reply mb-3">
+                                            <div>
+                                                <input type="checkbox" id="heart" checked />
+                                                <label for="heart">
+                                                    2
+                                                </label>
+                                                <span class="ms-3">Reply</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="message-input-wrapper">
+                                    <div class="message-input-left">
+                                        <div class="message-input-avatar">
+                                            <img src="assets/images/avatar.png 6.png" alt="">
+                                        </div>
+                                        <div class="message-input-box">
+                                            <div class="message-input">
+                                                <input type="text" placeholder="What do you want to ask or share?">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-input-buttonlist">
+                                        <button disabled="" class="button send-message-button">
+                                            Post
+                                        </button>
+                                    </div>
+                                </div>
+                                <p class="px-5 mt-2">Last comment on Saturday, March 30, 2024, 5:05 PM</p>
+                            </div>
+
+
 
 
                         </div>
@@ -563,8 +630,7 @@
                 <div class="popular-courses-wrap">
                     <div class="card">
                         <a href="#" class="card-img">
-                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                         </a>
                         <div class="card-description">
                             <div class="card-info">
@@ -581,8 +647,7 @@
                     </div>
                     <div class="card">
                         <a href="#" class="card-img">
-                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                         </a>
                         <div class="card-description">
                             <div class="card-info">
@@ -599,8 +664,7 @@
                     </div>
                     <div class="card">
                         <a href="#" class="card-img">
-                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                         </a>
                         <div class="card-description">
                             <div class="card-info">
@@ -617,8 +681,7 @@
                     </div>
                     <div class="card">
                         <a href="#" class="card-img">
-                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="">
+                            <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                         </a>
                         <div class="card-description">
                             <div class="card-info">
@@ -919,15 +982,15 @@
 
                     <div class="p-3">
                         <ul class=" d-flex flex-wrap p-0 m-0">
-                            <li  ><a href="" class="text-white p-1 desgin">Contact</a></li>
-                            <li><a href="" class="text-white p-1 desgin">over ons</a></li>
-                            <li><a href="" class="text-white p-1 desgin">agenda</a></li>
-                            <li><a href="" class="text-white p-1 desgin">redeem coupon</a></li>
-                            <li><a href="" class="text-white p-1 desgin">afliate program</a></li>
-                             <li><a href="" class="text-white p-1 desgin">to ask</a></li>
-                            <li><a href="" class="text-white p-1 desgin">youtube</a></li>
-                            <li><a href="" class="text-white p-1 desgin">term of use</a></li>
 
+                            <li><a class="text-white p-1">Contact</a></li>
+                            <li><a class="text-white p-1">over ons</a></li>
+                            <li><a class="text-white p-1">agenda</a></li>
+                            <li><a class="text-white  p-1">redeem coupon</a></li>
+                            <li><a class="text-white p-1">afliate program</a></li>
+                            <li> <a class="text-white p-1">to ask</a></li>
+                            <li> <a class="text-white p-1"> youtube</a></li>
+                            <li> <a class="text-white p-1"> term of use</a></li>
                         </ul>
 
                     </div>
@@ -983,171 +1046,280 @@
 
 
 
-
-
     <!-- Modal -->
-    <div class="modal media-popup fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal media-popup fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button class="primary-color btn w-100">Add Video</button>
+                <div class="modal-header p-2">
+                    <button class="primary-color btn w-100">Invite Member</button>
                     <button type="button" class="btn-close custom-cross" data-bs-dismiss="modal" aria-label="Close"><img
-                        src="assets/images/cross.svg" alt=""></button>
-                </div>
-                <div class="modal-body p-0">
-                    <input type="file" name="" id="file" hidden>
-                    <label class="d-flex justify-content-center cursor-pointer p-4" for="file"
-                        style="background-color: #F6F6F6;">
+                            src="assets/images/cross.svg" alt=""></button>
 
-                        <div class="text-center">
-                            <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
+                </div>
+                <div class="modal-body p-3">
+                    <div class="d-flex gap-1 border pe-3 ps-2 py-1 align-items-center rounded rounded-lg">
+                        <span>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M10.625 6.41141H13.5117V19.6263C13.5117 19.7981 13.6523 19.9388 13.8242 19.9388H16.168C16.3398 19.9388 16.4805 19.7981 16.4805 19.6263V6.41141H19.375C19.6367 6.41141 19.7812 6.11062 19.6211 5.9075L15.2461 0.368437C15.2169 0.331086 15.1795 0.300879 15.1369 0.280105C15.0942 0.259331 15.0474 0.248535 15 0.248535C14.9526 0.248535 14.9058 0.259331 14.8631 0.280105C14.8205 0.300879 14.7831 0.331086 14.7539 0.368437L10.3789 5.90359C10.2188 6.11063 10.3633 6.41141 10.625 6.41141ZM29.2969 18.4544H26.9531C26.7812 18.4544 26.6406 18.595 26.6406 18.7669V24.7825H3.35938V18.7669C3.35938 18.595 3.21875 18.4544 3.04688 18.4544H0.703125C0.53125 18.4544 0.390625 18.595 0.390625 18.7669V26.5013C0.390625 27.1927 0.949219 27.7513 1.64062 27.7513H28.3594C29.0508 27.7513 29.6094 27.1927 29.6094 26.5013V18.7669C29.6094 18.595 29.4688 18.4544 29.2969 18.4544Z"
-                                    fill="#454E5C" />
+                                    d="M15.7656 14.6895L10.6934 9.61719C11.4805 8.59961 11.9062 7.35547 11.9062 6.04688C11.9062 4.48047 11.2949 3.01172 10.1895 1.9043C9.08398 0.796875 7.61133 0.1875 6.04688 0.1875C4.48242 0.1875 3.00977 0.798828 1.9043 1.9043C0.796875 3.00977 0.1875 4.48047 0.1875 6.04688C0.1875 7.61133 0.798828 9.08398 1.9043 10.1895C3.00977 11.2969 4.48047 11.9062 6.04688 11.9062C7.35547 11.9062 8.59766 11.4805 9.61523 10.6953L14.6875 15.7656C14.7024 15.7805 14.72 15.7923 14.7395 15.8004C14.7589 15.8084 14.7797 15.8126 14.8008 15.8126C14.8218 15.8126 14.8427 15.8084 14.8621 15.8004C14.8815 15.7923 14.8992 15.7805 14.9141 15.7656L15.7656 14.916C15.7805 14.9011 15.7923 14.8835 15.8004 14.864C15.8084 14.8446 15.8126 14.8238 15.8126 14.8027C15.8126 14.7817 15.8084 14.7609 15.8004 14.7414C15.7923 14.722 15.7805 14.7043 15.7656 14.6895ZM9.14062 9.14062C8.3125 9.9668 7.21484 10.4219 6.04688 10.4219C4.87891 10.4219 3.78125 9.9668 2.95312 9.14062C2.12695 8.3125 1.67188 7.21484 1.67188 6.04688C1.67188 4.87891 2.12695 3.7793 2.95312 2.95312C3.78125 2.12695 4.87891 1.67188 6.04688 1.67188C7.21484 1.67188 8.31445 2.125 9.14062 2.95312C9.9668 3.78125 10.4219 4.87891 10.4219 6.04688C10.4219 7.21484 9.9668 8.31445 9.14062 9.14062Z"
+                                    fill="#6B737E" />
                             </svg>
 
-                            <p class="text-gray mb-0 fw-bold my-3">Browse video or drag and drop video here</p>
-                            <p class="text-gray fs-14 mt-2">Supported format: .mp4 | Max file size: 100MB</p>
-                        </div>
+                        </span>
+                        <input class="form-control border-0 shadow-none px-1" type="search" placeholder="Search person">
+                    </div>
+                    <div class="scrollbar">
+                        <ul class="user-list px-0">
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar-4.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                            <li class="user-item">
+                                <div class="user-avatar">
+                                    <img src="assets/images/user-avatar-4.png" alt="">
+                                </div>
+                                <div class="user-info">
+                                    <p>Elja Trum <span>(@eljadtrum)</span></p>
+                                </div>
+                                <button class="close-button">
+                                    <img src="assets/images/close-dark.png" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
-                    </label>
-                    <div class="px-3">
-                        <div class="divider"><span class="bg-white px-2">Or</span></div>
+                    <div class="text-end">
+                        <button data-bs-dismiss="modal" aria-label="Close" class="button text-dark bg-transparent mt-3">
+                            Cancel
+                        </button>
+                        <button disabled="" class="button send-message-button mt-3">
+                            Invite
+                        </button>
                     </div>
-                    <div class="p-3">
-                        <div class="mb-4">
-                            <label for="videourl" class="mb-2 field-lable">URL</label>
-                            <input class="form-control custome-filed" type="input" name="" id=""
-                                placeholder="Paste a video URL (eg: https://www.youtube.com/watch?asdad121)">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- create grpupd -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <button class="primary-color btn w-100">Create Group</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/cross.svg" alt=""></button>
+
+                </div>
+                <div class="modal-body input-with-label-wrapper">
+                    <form action="">
+                        <div class="input-with-label-wrapper">
+                            <label for="group-name">Name</label>
+                            <div class="input-wrapper my-3">
+                                <input id="group-name" type="text" placeholder="Insert group name">
+                            </div>
                         </div>
-                        <div>
-                            <label for="videourl" class="mb-2 field-lable">Search video on Photofacts Academy</label>
-                            <input class="form-control custome-filed" type="input" name="" id=""
-                                placeholder="Search video">
+                        <div class="input-with-label-wrapper">
+                            <label for="group-name">Description</label>
+                            <div class="input-wrapper my-3">
+                                <textarea id="group-name" placeholder="Insert group description"></textarea>
+                            </div>
                         </div>
-                    </div>
+                        <div class="input-with-label-wrapper ">
+                            <label class="my-3" for="group-name ">Group type</label>
+                            <ul class="input-list">
+                                <li class="input-list-item">
+                                    <input type="radio" name="group-type" id="group-public" value="public" class="group-type" checked="" hidden="">
+                                    <label for="group-public" class="group-type-label"></label>
+                                    <div class="group-type-description">
+                                        <h5>Public</h5>
+                                        <p>This group can be seen and participated by anyone.</p>
+                                    </div>
+                                </li>
+                                <li class="input-list-item">
+                                    <input type="radio" name="group-type" id="group-private" value="private" class="group-type" hidden="">
+                                    <label for="group-private" class="group-type-label"></label>
+                                    <div class="group-type-description">
+                                        <h5>Private</h5>
+                                        <p>
+                                            The group content can only be seen by members. Users can join by inviting or requesting access.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-cta text-end">
+                            <button class="button-text">Cancel</button>
+                            <button class="button">Create</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+                    <button class="primary-color btn w-100">Edit Group</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img src="assets/images/cross.svg" alt=""></button>
+
+                </div>
+                <div class="modal-body input-with-label-wrapper">
+                    <form action="">
+                        <div class="input-with-label-wrapper">
+                            <label for="group-name">Name</label>
+                            <div class="input-wrapper my-3">
+                                <input id="group-name" type="text" placeholder="Insert group name">
+                            </div>
+                        </div>
+                        <div class="input-with-label-wrapper">
+                            <label for="group-name">Description</label>
+                            <div class="input-wrapper my-3">
+                                <textarea id="group-name" placeholder="Insert group description"></textarea>
+                            </div>
+                        </div>
+                        <div class="input-with-label-wrapper ">
+                            <label class="my-3" for="group-name ">Group type</label>
+                            <ul class="input-list">
+                                <li class="input-list-item">
+                                    <input type="radio" name="group-type" id="group-public" value="public" class="group-type" checked="" hidden="">
+                                    <label for="group-public" class="group-type-label"></label>
+                                    <div class="group-type-description">
+                                        <h5>Public</h5>
+                                        <p>This group can be seen and participated by anyone.</p>
+                                    </div>
+                                </li>
+                                <li class="input-list-item">
+                                    <input type="radio" name="group-type" id="group-private" value="private" class="group-type" hidden="">
+                                    <label for="group-private" class="group-type-label"></label>
+                                    <div class="group-type-description">
+                                        <h5>Private</h5>
+                                        <p>
+                                            The group content can only be seen by members. Users can join by inviting or requesting access.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-cta text-end">
+                            <button class="button-text">Cancel</button>
+                            <button class="button">Create</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header p-2">
+
+                    <button class="primary-color btn w-100">Delete Group</button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><img
+                        src="assets/images/cross.svg" alt=""></button>
+
+
+                </div>
+                <div class="modal-body border-0">
+                    <p>
+                        Are you sure want to delete
+                        <span class="semi-bold"> SG Photography? </span>
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Add</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-    <!-- Modal -->
-    <div class="modal fade" id="mediaModal" tabindex="-1" aria-labelledby="mediaModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="mediaModalLabel">Media Gallery</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="..." class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
 
     <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script>
-        function toggleText() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("toggleButton");
-
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "See More";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "See Less";
-                moreText.style.display = "inline";
-            }
-        }
-
-
-
-
-
-
-        function toggleSidebar() {
-            var sidebar = document.getElementById('sidebar');
-            if (sidebar.style.display === "none" || sidebar.style.display === "") {
-                sidebar.style.display = "block";
-                setTimeout(() => {
-                    sidebar.style.transform = "translateX(0)";
-                }, 10); // Add a small delay to allow the display change to take effect before the transform
-            } else {
-                sidebar.style.transform = "translateX(-100%)";
-                sidebar.addEventListener('transitionend', () => {
-                    sidebar.style.display = "none";
-                }, {
-                    once: true
-                });
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         function likePost(element) {
             const likeCount = element.querySelector('.like-count');
             let count = parseInt(likeCount.textContent);
@@ -1160,17 +1332,17 @@
         function read() {
             if (!i) {
                 document.getElementById("more").style.
-                    display = "inline";
+                display = "inline";
                 document.getElementById("dots").style.
-                    display = "none";
+                display = "none";
                 document.getElementById("read").innerHTML = "see less";
                 i = 1;
 
             } else {
                 document.getElementById("more").style.
-                    display = "none";
+                display = "none";
                 document.getElementById("dots").style.
-                    display = "inline";
+                display = "inline";
                 document.getElementById("read").innerHTML = "see more";
                 i = 0;
             }
@@ -1205,6 +1377,14 @@
                 });
             });
         });
+
+
+        const sidebar = document.getElementById("sidebar")
+        const togglebtn = document.getElementById('togglebtn')
+
+        toggleBtn.addEventListener('click', function() {
+            sidebar.classList.toggle('sidebar')
+        })
     </script>
 </body>
 

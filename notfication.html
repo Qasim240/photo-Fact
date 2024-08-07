@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <title>Home</title>
 </head>
@@ -68,18 +67,18 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg text-white py-3">
         <div class="container">
-            <a class="text-wite" href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            <a class="text-wite cursor-pointer" href="index.html"><img src="assets/images/logo.svg" alt="logo"></a>
+            <button class="navbar-toggler nav-mobile-toggle text-white py-2 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon text-black"></span>
+               Menu
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
 
 
-                </ul>
-                <span class="navbar-text">
+                        </ul>
+                        <span class="navbar-text">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-4">
 
                         <li>home</li>
@@ -91,17 +90,18 @@
 
                     </ul>
                 </span>
-            </div>
-        </div>
+                    </div>
+                </div>
     </nav>
+
 
 
     <div class="container">
         <div class="text-end">
-            <button class="btn d-lg-none d-block" id="toggleBtn">toggle</button>
-                </div>
+
+        </div>
         <div id="main_wrap">
-           
+            <button class="toggle-btn" onclick="toggleSidebar()"><img src="assets/images/toggler.svg" alt=""></button>
             <!-- sidebar -->
             <div class="midwhi">
                 <div class="content-category-wrap">
@@ -209,8 +209,7 @@
                             <div class="perfecr-center d-none">
                                 <div class="text-center">
                                     <h2 class="text-20-gray">You have no notification</h2>
-                                    <p class="grey-text">Notification about @mentions, group invitation, and others that
-                                        you are part of will be shown here.</p>
+                                    <p class="grey-text">Notification about @mentions, group invitation, and others that you are part of will be shown here.</p>
                                 </div>
                             </div>
                             <!-- No notification msg ends -->
@@ -221,8 +220,7 @@
                                     <img class="profile-img" src="assets/images/profileicon.png" alt="">
                                 </div>
                                 <div>
-                                    <div class="name"> <span>@ynskelankreijer</span> <span
-                                            class="notification-type">tagging you in a post</span></div>
+                                    <div class="name"> <span>@ynskelankreijer</span> <span class="notification-type">tagging you in a post</span></div>
                                     <p class="time-date">Wednesday, October 27, 2021, 10:49 PM</p>
                                 </div>
                             </div>
@@ -231,8 +229,7 @@
                                     <img class="profile-img" src="assets/images/profileicon.png" alt="">
                                 </div>
                                 <div>
-                                    <div class="name"> <span>@ynskelankreijer</span> <span
-                                            class="notification-type">tagging you in a post</span></div>
+                                    <div class="name"> <span>@ynskelankreijer</span> <span class="notification-type">tagging you in a post</span></div>
                                     <p class="time-date">Wednesday, October 27, 2021, 10:49 PM</p>
                                 </div>
                             </div>
@@ -241,8 +238,7 @@
                                     <img class="profile-img" src="assets/images/profileicon.png" alt="">
                                 </div>
                                 <div>
-                                    <div class="name"> <span>@ynskelankreijer</span> <span
-                                            class="notification-type">tagging you in a post</span></div>
+                                    <div class="name"> <span>@ynskelankreijer</span> <span class="notification-type">tagging you in a post</span></div>
                                     <p class="time-date">Wednesday, October 27, 2021, 10:49 PM</p>
                                 </div>
                             </div>
@@ -251,8 +247,7 @@
                                     <img class="profile-img" src="assets/images/profileicon.png" alt="">
                                 </div>
                                 <div>
-                                    <div class="name"> <span>@ynskelankreijer</span> <span
-                                            class="notification-type">tagging you in a post</span></div>
+                                    <div class="name"> <span>@ynskelankreijer</span> <span class="notification-type">tagging you in a post</span></div>
                                     <p class="time-date">Wednesday, October 27, 2021, 10:49 PM</p>
                                 </div>
                             </div>
@@ -273,8 +268,7 @@
                     <div class="popular-courses-wrap">
                         <div class="card">
                             <a href="#" class="card-img">
-                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="">
+                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                             </a>
                             <div class="card-description">
                                 <div class="card-info">
@@ -291,8 +285,7 @@
                         </div>
                         <div class="card">
                             <a href="#" class="card-img">
-                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="">
+                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                             </a>
                             <div class="card-description">
                                 <div class="card-info">
@@ -309,8 +302,7 @@
                         </div>
                         <div class="card">
                             <a href="#" class="card-img">
-                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="">
+                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                             </a>
                             <div class="card-description">
                                 <div class="card-info">
@@ -327,8 +319,7 @@
                         </div>
                         <div class="card">
                             <a href="#" class="card-img">
-                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="">
+                                <img src="https://images.unsplash.com/photo-1506057213367-028a17ec52e5?q=80&amp;w=1470&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
                             </a>
                             <div class="card-description">
                                 <div class="card-info">
@@ -349,20 +340,16 @@
 
 
 
+            <div class="footer container text-light ">
 
 
-
-            <!-- footer -->
-            <div class="course container text-light ">
-
-
-                <div class="course-warp container">
+                <div class="footer-warp container">
                     <h4 style="padding-left:62px ;">Online Photography course</h4>
                     <!-- first row -->
                     <div class="row style">
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
@@ -373,12 +360,12 @@
                                 <li><a href="">Course History of photography (1900-1950)</a></li>
                                 <li><a href="">basic photography course</a></li>
                                 <li><a href="">getting started with canon EOS R course</a></li>
-
+    
                             </ul>
                         </div>
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1 ">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -392,11 +379,11 @@
                                 <li><a href="">getting started with canon EOS R course</a></li>
                                 <li><a href="">HDR photography course</a></li>
                                 <li><a href="">Nigt photography course</a></li>
-
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -410,8 +397,8 @@
                                 <li><a href="">getting started with canon EOS R course</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -428,21 +415,21 @@
                     </div>
                     <!-- second row -->
                     <div class="row style">
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1 ">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
                                 <li><a href="">course Get started with lighting</a></li>
-
-
+    
+    
                             </ul>
                         </div>
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -454,11 +441,11 @@
                                 <li><a href="">Course History of photography (1900-1950)</a></li>
                                 <li><a href="">basic photography course</a></li>
                                 <li><a href="">getting started with canon EOS R course</a></li>
-
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -467,11 +454,11 @@
                                 <li><a href="">course Get started with lighting</a></li>
                                 <li><a href="">Advance focusing course</a></li>
                                 <li><a href="">History of photography course</a></li>
-
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">course the basic of photography</a>
                                 </li>
@@ -488,21 +475,21 @@
                     </div>
                     <!-- third row -->
                     <div class="row style">
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1 ">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="">Animal photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
-
-
-
+    
+    
+    
                             </ul>
                         </div>
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">Portrait photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
@@ -513,83 +500,87 @@
                                 <li><a href="">Course History of photography (1900-1950)</a></li>
                                 <li><a href="">basic photography course</a></li>
                                 <li><a href="">getting started with canon EOS R course</a></li>
-
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">Studio photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
-
-
+    
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">wedding photography</a></li>
                                 <li><a href="">course Get started with photography</a></li>
-
-
+    
+    
                             </ul>
                         </div>
                     </div>
                     <!-- fourth row -->
                     <div class="row style">
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="">Product photography course</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
-
-
-
+    
+    
+    
                             </ul>
                         </div>
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">Enterpreneurship course</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
                                 <li><a href="">course Get started with lighting</a></li>
-
-
+    
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
                                 <li style="color: yellowgreen;"><a href="link1.html">Video grapy course</a></li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">Basic video editing course with corel video studio X10</a></li>
-
-
+    
+    
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-3 ">
-
+                        <div class="col-lg-3 col-md-3 style1">
+    
                             <ul>
-                                <li style="color: yellowgreen;"><a href="link1.html">course App</a></li>
+                                <li style="color: yellowgreen;">
+                                    <h6>course App</h6>
+                                </li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about </a></li>
-
-
+    
+    
                             </ul>
                         </div>
                     </div>
                     <!-- fifith row -->
                     <div class="row style">
-
-                        <div class="col-lg-3 col-md-3 ">
-
+    
+                        <div class="col-lg-3 col-md-3 style1 ">
+    
                             <ul>
-                                <li style="color: yellowgreen;"><a href="">course the basic of photography</a></li>
+                                <li style="color: yellowgreen;">
+                                    <h6>course the basic of photography</h6>
+                                </li>
                                 <li><a href="">course Get started with photography</a></li>
                                 <li><a href="">course everything about depth of field</a></li>
                                 <li><a href="">course Get started with lighting</a></li>
@@ -598,31 +589,75 @@
                                 <li><a href="">Course History of photography (1900-1950)</a></li>
                                 <li><a href="">basic photography course</a></li>
                                 <li><a href="">getting started with canon EOS R course</a></li>
-
+    
                             </ul>
                         </div>
-
-
-
-
+    
+    
+    
+    
                     </div>
-
-
+    
+    
                 </div>
-
+    
             </div>
 
 
-
-            <footer class="footer pt-3 pb-4">
-                <div class="container footer-warp test-center text-ms-4">
-                    <div class="row  text-md-left">
-                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h2>helo</h2>
+            <!-- footer -->
+            <div class="p-3 pt-3 bottom-bar text-white">
+                <div class="row d-flex align-items-center me-2">
+    
+                    <div class="col-md-6 col-lg-7 text-center ">
+    
+                        <div class="p-3">
+                            <ul class=" d-flex flex-wrap p-0 m-0">
+                                <li  ><a href="" class="text-white p-1 desgin">Contact</a></li>
+                                <li><a href="" class="text-white p-1 desgin">over ons</a></li>
+                                <li><a href="" class="text-white p-1 desgin">agenda</a></li>
+                                <li><a href="" class="text-white p-1 desgin">redeem coupon</a></li>
+                                <li><a href="" class="text-white p-1 desgin">afliate program</a></li>
+                                 <li><a href="" class="text-white p-1 desgin">to ask</a></li>
+                                <li><a href="" class="text-white p-1 desgin">youtube</a></li>
+                                <li><a href="" class="text-white p-1 desgin">term of use</a></li>
+    
+                            </ul>
+    
                         </div>
+    
                     </div>
+    
+    
+    
+                    <div class="col-md-5 col-lg-5 ml-lg-0 text-center text-md-end">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg></a>
+    
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter static-background" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                            </svg>
+                        </a>
+    
+                        <span>@ 2013-2024 photofact</span>
+    
+    
+    
+                    </div>
+                    <!-- Grid column -->
                 </div>
-            </footer>
+            </div>
+
+
+       
         </div>
     </div>
 
@@ -631,22 +666,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Modal -->
-    <div class="modal media-popup fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal media-popup fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -655,8 +676,7 @@
                 </div>
                 <div class="modal-body p-0">
                     <input type="file" name="" id="file" hidden>
-                    <label class="d-flex justify-content-center cursor-pointer p-4" for="file"
-                        style="background-color: #F6F6F6;">
+                    <label class="d-flex justify-content-center cursor-pointer p-4" for="file" style="background-color: #F6F6F6;">
 
                         <div class="text-center">
                             <svg width="30" height="28" viewBox="0 0 30 28" fill="none"
@@ -677,13 +697,11 @@
                     <div class="p-3">
                         <div class="mb-4">
                             <label for="videourl" class="mb-2 field-lable">URL</label>
-                            <input class="form-control custome-filed" type="input" name="" id=""
-                                placeholder="Paste a video URL (eg: https://www.youtube.com/watch?asdad121)">
+                            <input class="form-control custome-filed" type="input" name="" id="" placeholder="Paste a video URL (eg: https://www.youtube.com/watch?asdad121)">
                         </div>
                         <div>
                             <label for="videourl" class="mb-2 field-lable">Search video on Photofacts Academy</label>
-                            <input class="form-control custome-filed" type="input" name="" id=""
-                                placeholder="Search video">
+                            <input class="form-control custome-filed" type="input" name="" id="" placeholder="Search video">
                         </div>
                     </div>
                 </div>
@@ -704,20 +722,21 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="mediaModalLabel">Media Gallery</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  
+                    <button type="button" class="btn-close custom-cross" data-bs-dismiss="modal" aria-label="Close"><img
+                        src="assets/images/cross.svg" alt=""></button>
+                   
                 </div>
                 <div class="modal-body">
                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <!-- Slides will be dynamically inserted here -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -732,9 +751,8 @@
 
 
     <!-- js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <script>
         function likePost(element) {
             const likeCount = element.querySelector('.like-count');
@@ -744,20 +762,21 @@
 
 
         var i = 0;
+
         function read() {
             if (!i) {
                 document.getElementById("more").style.
-                    display = "inline";
+                display = "inline";
                 document.getElementById("dots").style.
-                    display = "none";
+                display = "none";
                 document.getElementById("read").innerHTML = "see less";
                 i = 1;
 
             } else {
                 document.getElementById("more").style.
-                    display = "none";
+                display = "none";
                 document.getElementById("dots").style.
-                    display = "inline";
+                display = "inline";
                 document.getElementById("read").innerHTML = "see more";
                 i = 0;
             }
@@ -793,12 +812,11 @@
             });
         });
 
-const sidebar=document.getElementById('sidebar')
-const toggleBtn=document.getElementById('toggleBtn')
-toggleBtn.addEventListener("click",function(){
-    sidebar.classList.toggle('sidebar')
-})
-
+        const sidebar = document.getElementById('sidebar')
+        const toggleBtn = document.getElementById('toggleBtn')
+        toggleBtn.addEventListener("click", function() {
+            sidebar.classList.toggle('sidebar')
+        })
     </script>
 </body>
 
